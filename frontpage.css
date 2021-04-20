@@ -1,0 +1,140 @@
+@media only screen and (min-width: 1px) and (max-width: 1279px){
+    #particles-js{
+        display: none;
+    }
+    #downpresser{
+        display: none;
+    }
+}
+header{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: 175px auto auto auto;
+    padding: 45px 50px 50px 45px;
+    background-color: #ffffff;
+    color: #1c1c1c;
+    z-index: 10;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1c;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+  }
+.lighter{
+    font-weight: 500;
+}
+h1{
+    margin: 0px 0px 0px 0px;
+}
+#downpresser{
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    margin-left: -72px;
+    top: 90vh;
+    z-index: 10;
+    width: 144px;
+    left: 50%;
+    
+}
+h3{
+    font-weight: 400;
+    margin: 0px 0px 15px 0px;
+}
+/*Main part*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 175px 80vh auto 175px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+main{
+    margin: 50px 50px 50px 50px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    /*
+    perspective: 8px;
+    perspective-origin: 0%;
+    transform: translateZ(0px) ;
+    */
+}
+#recentWork{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.classifier{
+    color: #FFC312;
+    font-weight: 500;
+    font-size: 1.125em;
+    word-spacing: 10px;
+    display: inline-block;
+    margin: 0px;
+}
+.slashSpacer{
+    letter-spacing: 5px;
+}
+.anouncer{
+    margin: 30px 0px;
+    color: #1c1c1c;
+    font-weight: 600;
+    font-size: 2.375em;
+
+}
+.workLink{
+    color: #1c1c1c;
+    
+}
+.container{
+    position: relative;
+    background-color: #ffffff;
+    padding: 27px 30px 27px 33px;
+    max-width: 525px;
+    display: block;
+    top: calc((-650px / 2) - 101px);
+}
+.workImageRight{
+    position: relative;
+    z-index: -10;
+    display: block;
+    height: 650px;
+    width: calc(80vw - 200px);
+    text-align: right;
+    margin: 0px 0px 0px 150px;
+    object-fit: cover;
+}
+.workImageLeft{
+    position: relative;
+    z-index: -10;
+    display: block;
+    height: 650px;
+    width: calc(80vw - 200px);
+    text-align: right;
+    margin: 0px 0px 0px calc(-80vw + 575px);
+    object-fit: cover;
+}
+.workAnouncerLeft{
+    position: relative;
+    margin: 0px 0px 150px 0px;
+    height: 650px;
+}
+.workAnouncerRight{
+    position: relative;
+    margin: 0px 0px 150px calc(80vw - 625px);
+    height: 650px;
+    
+}
+.workAnouncerLeft:last-child{
+    margin: 0px 0px 50px 0px;
+}

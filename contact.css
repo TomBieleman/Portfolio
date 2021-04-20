@@ -1,0 +1,81 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-rows: 20vh 80vh 175px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+main{
+    margin: 30px 0px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#tekst1{
+    margin-top: 150px;
+    width: 380px;
+    position: absolute;
+}
+.text{
+    color: #1C1C1C;
+    background-color: #ffffff;
+    padding: 40px;
+    position: relative;
+    z-index: 10;
+}
+.images{
+    z-index: 0;
+    position: absolute;
+}
+#img2{
+    margin: 0px 150px 0px 0px;
+    z-index: 0;
+    position: relative;
+    float: right;
+}
+h2{
+    font-weight: 600;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-size: 2.375em;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: 500;
+    margin: 0px;
+}
+.contactLinks{
+    font-weight: 600;
+    font-size: 1.5em;
+    line-height: 150%;
+    color: #1c1c1c;
+}
+#emailLink{
+    width: 24px;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+#linkedinLink{
+    width: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+#youtubeLink{
+    width: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#discordLink{
+    width: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+footer{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns:2fr 275px 1fr 175px 1fr 275px 2fr;
+    background-color: #FFFFFF;
+}

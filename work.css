@@ -1,0 +1,86 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 80% 1fr;
+    grid-template-rows: 175px 2900px 175px;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+}
+main{
+    margin: 50px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+#recentWork{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+}
+.classifier{
+    color: #FFC312;
+    font-weight: 500;
+    font-size: 1.125em;
+    word-spacing: 10px;
+    display: inline-block;
+    margin: 0px;
+}
+.slashSpacer{
+    letter-spacing: 5px;
+}
+.anouncer{
+    margin: 30px 0px;
+    color: #1c1c1c;
+    font-weight: 600;
+    font-size: 2.375em;
+
+}
+.workLink{
+    color: #1c1c1c;
+    
+}
+#workImageOne{
+    position: absolute;
+    z-index: -10;
+    display: block;
+    margin: 105px auto auto 100px;
+}
+#workAnouncerOne{
+    background-color: #ffffff;
+    padding: 27px 30px 27px 33px;
+    max-width: 525px;
+    margin: 325px 0px 0px 0px;
+}
+#workImageTwo{
+    position: absolute;
+    z-index: -10;
+    display: block;
+    margin: 400px 180px auto auto;
+}
+#workAnouncerTwo{
+    background-color: #ffffff;
+    padding: 27px 30px 27px 33px;
+    max-width: 525px;
+    margin: 870px 0px 0px 795px;
+}
+#workImageThree{
+    position: absolute;
+    z-index: -10;
+    display: block;
+    margin: 600px auto auto 100px;
+}
+#workAnouncerThree{
+    background-color: #ffffff;
+    padding: 27px 30px 27px 33px;
+    max-width: 525px;
+    margin: 815px 0px 0px 0px;
+}
+footer{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns:2fr 275px 1fr 175px 1fr 275px 2fr;
+    background-color: #FFFFFF;
+}
