@@ -49,6 +49,7 @@ input[type="text"]:focus{
     visibility: visible;
     opacity: 1;
 }
+
 @media only screen and (min-width: 1px) and (max-width: 1279px){
     #body{
         margin: 0px;
@@ -94,13 +95,13 @@ input[type="text"]:focus{
         margin-right: 20px;
     }
     nav{
-        display: none;
+        display: none !important;
     }
     header{
-        display: none;
+        display: none !important;
     }
     main{
-        display: none;
+        display: none !important;
     }
     footer{
         display: none !important;
@@ -173,7 +174,7 @@ input[type="text"]:focus{
         border-bottom: 3px solid #FFC312;
         animation: hover 0.5s ease-in-out;
     }
-    nav a:first-child:hover{
+    nav > a:hover{
         border-bottom: 3px solid #1c1c1c;
         animation: ANTIhover 0.5s ease-in-out;
     }

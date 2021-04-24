@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 80% 1fr;
-    grid-template-rows: 175px 2200px 175px;
+    grid-template-rows: 175px auto 175px;
     padding: 0px;
     margin: 0px;
     height: 100%;
@@ -12,57 +12,73 @@ main{
     margin: 50px 0px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    display: grid;
 }
 #tekst1{
-    margin-top: 130px;
     float: right;
     width: 420px;
-    margin-right:145px;
+    margin-right: 0px;
+    top: calc((-1870px / 2) - (164px / 2));
 }
 #tekst2{
-    margin-top: 870px;
-    width: 480px;
-    left: 30px;
+    width: 420px;
+    top: calc((-1030px / 2) - (330px / 2));
 }
 #tekst3{
-    margin: 461px 165px 0px 0px;
     float: right;
-    width: 400px;
+    width: 420px;
+    top: calc((-575px / 2) - (244px / 2));
+}
+.infoBox{
+    position: relative;
+    margin: 0px 0px 150px 0px;
+
+}
+#infoBox1{
+    height: 1870px;
+}
+#infoBox2{
+    height: 1030px;
+}
+#infoBox3{
+    height: 575px;
 }
 .text{
     color: #1C1C1C;
     background-color: #ffffff;
+    width: 420px;
     padding: 40px;
     right: 0px;
     position: relative;
     z-index: 10;
     line-height: 180%;
+    display: block;
+    /* top: calc((-650px / 2) - (272px / 2)); */
+    /*this pushes the text div at the middle of the height of the foto
+    Formula: (Height photo / 2) - (Height Div / 2)
+    Height photo can also hold a formula to the view width which
+    Because every photo is diffrent its in the divs
+    */
 }
 .images{
-    z-index: 0;
-    position: absolute;
+    z-index: -10;
+    position: relative;
+    display: block;
 }
 #img1{
     opacity: 50%;
-    width:  960px;
-    margin-left:145px;
+    width:  calc(80vw - 200px);
+    margin-right: 200px;
 }
 #img2{
     opacity: 50%;
-    margin-top: 680px;
-    z-index: 0;
-    position: absolute;
-    right: 300px;
-    z-index: 10;
-    width: 1100px;
+    width:  calc(80vw - 200px);
+    margin-left: 200px;
 }
 #img3{
     opacity: 50%;
-    margin: 315px 0px 0px 165px;
-    z-index: 0;
-    position: absolute;
-    z-index: 10;
-    width: 950px;
+    width:  calc(80vw - 200px);
+    margin-right: 200px;
 }
 h2{
     font-weight: 600;
@@ -87,9 +103,11 @@ footer{
     background-color: #FFFFFF;
 }
 #download{
-    margin: 900px auto 0px auto;
+    margin: -50px auto 50px auto;
     text-align: center;
+    display: inline-block;
     color: #FFFFFF;
     font-size: 2.375em;
-    z-index: 100;
+    justify-self: center;
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
 }
