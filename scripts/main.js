@@ -1,6 +1,7 @@
 var i = 0;
 
-var words = ['creative', 'designer', 'creator', 'gamer', 'editor', 'artist', 'generalist'];
+// var words = ['creative', 'designer', 'creator', 'gamer', 'editor', 'artist', 'generalist'];
+var words = ['designer'];
 
 function wordChanger(){
     document.getElementById('wordChanger').innerHTML = words[i];
